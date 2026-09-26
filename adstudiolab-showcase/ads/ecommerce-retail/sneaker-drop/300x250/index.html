@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>Stride — Sneaker Drop | 300x250</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:300px;height:250px;overflow:hidden;background:#0A0A10}
+#ad{position:relative;width:300px;height:250px;overflow:hidden;cursor:pointer;border:1px solid #333;background:radial-gradient(120% 90% at 80% 20%,#2A1838 0%,#0A0A10 60%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#FFFFFF;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*,#deco>*{position:absolute}
+#deco{inset:0;overflow:hidden}
+#stripes{left:-40px;top:0;width:calc(100% + 80px);height:100%;background:repeating-linear-gradient(135deg,rgba(255,61,90,0.08) 0 2px,transparent 2px 14px)}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#FF3D5A}
+#logo{display:flex;align-items:center;gap:8px}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#FF3D5A,#FFD23F);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#div{background:linear-gradient(180deg,transparent,rgba(255,61,90,0.5),transparent)}
+#hero{display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,61,90,0.12);border:1px solid rgba(255,61,90,0.35);color:#FF3D5A}
+#hero svg{width:56%;height:56%}
+#badge{z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;transform:rotate(10deg);background:#FFD23F;color:#1A1A22;box-shadow:0 6px 16px rgba(255,210,63,0.4)}
+#badge::before{content:"";position:absolute;inset:3px;border-radius:50%;border:1px dashed currentColor;opacity:.45}
+#badge b{font-weight:900;line-height:1}
+#badge span{margin-top:2px;font-size:6.5px;font-weight:800;letter-spacing:.8px}
+#sub{color:#A5A5BC}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:18px;background:linear-gradient(135deg,#FF5470,#E8213F);color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(255,61,90,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#A5A5BC}
+#intro{inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;visibility:hidden}
+#intro .ii{color:#FF3D5A}
+#intro .il{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900;letter-spacing:-.8px;line-height:1.05}
+#intro .il2{color:#FF3D5A;}
+
+#logo{left:14px;top:12px}
+.mk{width:24px;height:24px;border-radius:6px}
+.bn{font-size:13px}
+#badge{right:10px;top:10px;width:58px;height:58px}
+#badge b{font-size:17px}
+#hero{left:204px;top:84px;width:80px;height:80px}
+#content{left:16px;top:56px;width:184px}
+#hl{font-size:21px}
+#sub{margin-top:8px;font-size:11.5px;line-height:1.4}
+#cta{left:16px;bottom:16px;height:36px;padding:0 20px;font-size:13px}
+#legal{right:12px;bottom:8px;max-width:108px;text-align:right}
+#intro .ii{width:56px;height:56px}
+#intro .il{display:block;font-size:28px}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="deco"><i id="stripes"></i></div>
+<div id="logo"><span class="mk"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 34h40v3a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M4 34l3-15 9 4 6-9 6 7c4 4 9 6 13 7 3 1 3 3 3 6"/><path d="M25 21l3 3M29 18l3 3"/></svg></span><span class="bn">Stride</span></div>
+<div id="hero"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 34h40v3a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M4 34l3-15 9 4 6-9 6 7c4 4 9 6 13 7 3 1 3 3 3 6"/><path d="M25 21l3 3M29 18l3 3"/></svg></div>
+<div id="badge"><b>40%</b><span>OFF</span></div>
+<div id="content"><div id="hl" class="hd">Flat 40% Off<br><em>Velocity X</em></div><p id="sub">Limited pairs · Ends at midnight</p></div>
+<div id="cta"><span>Shop Now</span><i id="shine"></i></div>
+<div id="intro"><svg class="ii" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 34h40v3a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="M4 34l3-15 9 4 6-9 6 7c4 4 9 6 13 7 3 1 3 3 3 6"/><path d="M25 21l3 3M29 18l3 3"/></svg><div class="it"><span class="il">The Drop</span> <span class="il il2">Is Live</span></div></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .set("#intro",{autoAlpha:1},0)
+    .from("#deco",{autoAlpha:0,duration:.8},0)
+    .to("#stripes",{x:40,duration:6,ease:"none"},0)
+    .from("#intro .ii",{scale:0,rotation:-25,duration:.6,ease:"back.out(2)"},.15)
+    .from("#intro .il",{autoAlpha:0,y:18,stagger:.15,duration:.5,ease:"power3.out"},.4)
+    .to("#intro",{autoAlpha:0,duration:.35,ease:"power2.in"},2.1)
+    .from("#logo",{autoAlpha:0,x:-12,duration:.4},2.35)
+    .from("#hero",{scale:0,autoAlpha:0,duration:.55,ease:"back.out(1.8)"},2.45)
+    .from("#hl",{autoAlpha:0,y:14,duration:.45,ease:"power3.out"},2.6)
+    .from("#sub",{autoAlpha:0,y:8,duration:.4},2.85)
+    .from("#badge",{scale:0,rotation:-160,duration:.55,ease:"back.out(2)"},3.05)
+    .from("#cta",{autoAlpha:0,scale:.6,duration:.45,ease:"back.out(2)"},3.6)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>
