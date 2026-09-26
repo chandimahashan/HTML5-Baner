@@ -18,6 +18,12 @@
   const esc = (s) =>
     String(s).replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
   const pad = (n) => String(n).padStart(2, "0");
+  // Dark initials on light brand colours, white on dark ones
+  const inkFor = (hex) => {
+    const n = parseInt(hex.slice(1, 7), 16);
+    const lum = (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255;
+    return lum > 0.62 ? "#050505" : "#FFFFFF";
+  };
   const times = (key) => key.replace("x", "×");
 
   const ICON = {
@@ -122,13 +128,13 @@
       <article class="card" data-id="${c.id}" style="--card-accent:${c.accent}">
         <div class="card__info">
           <div class="card__head">
-            <div class="card__tags">
-              <span class="tag">${esc(c.industry)}</span>
-              <span class="style-chip" data-style="${esc(c.style)}">${esc(c.styleLabel)}</span>
+            <span class="avatar" style="color:${inkFor(c.accent)}" aria-hidden="true">${esc(c.brand.charAt(0))}</span>
+            <div class="card__who">
+              <h3 class="card__title">${esc(c.title)}</h3>
+              <p class="card__meta">Sponsored · ${esc(c.industry)} · <span class="style-chip" data-style="${esc(c.style)}">${esc(c.styleLabel)}</span></p>
             </div>
             <span class="card__num">#${pad(c.id)}</span>
           </div>
-          <h3 class="card__title">${esc(c.title)}</h3>
           <p class="card__value">${esc(c.value)}</p>
           <div class="sizes" role="group" aria-label="Preview size for ${esc(c.title)}">${sizeBtns}</div>
 
@@ -156,9 +162,9 @@
             <span class="stage__label" data-label></span>
           </div>
           <div class="card__toolbar">
-            <button type="button" class="tool" data-action="replay">${ICON.replay}<span>Replay Animation</span></button>
-            <button type="button" class="tool" data-action="specs">${ICON.specs}<span>View Specs</span></button>
-            <a class="tool" data-action="open" href="${first.path}" target="_blank" rel="noopener">${ICON.open}<span>Open in New Tab</span></a>
+            <button type="button" class="tool" data-action="replay" aria-label="Replay animation" title="Replay animation">${ICON.replay}<span>Replay</span></button>
+            <button type="button" class="tool" data-action="specs" aria-label="View specs" title="View specs">${ICON.specs}<span>Specs</span></button>
+            <a class="tool" data-action="open" href="${first.path}" target="_blank" rel="noopener" aria-label="Open in new tab" title="Open in new tab">${ICON.open}<span>New Tab</span></a>
           </div>
         </div>
       </article>`;
@@ -407,7 +413,7 @@
       </div>
 
       <div class="modal__actions">
-        <a class="btn btn--glass" href="${s.path}" target="_blank" rel="noopener">${ICON.open} Open ${times(modalSize)} in New Tab</a>
+        <a class="btn" href="${s.path}" target="_blank" rel="noopener">${ICON.open} Open ${times(modalSize)} in New Tab</a>
       </div>`;
   }
 

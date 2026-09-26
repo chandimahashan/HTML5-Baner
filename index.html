@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AdStudioLab — HTML5 Display Ads &amp; Motion Graphics Portfolio</title>
   <meta name="description" content="70 live HTML5 banner campaigns in 3 IAB sizes and 10 creative styles. Google Ads & IAB ready, under 150KB, GSAP powered and clickTag validated.">
-  <meta name="theme-color" content="#0B0F19">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#FFFFFF">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/components.css">
 </head>
@@ -20,17 +17,11 @@
     <div class="container site-header__inner">
       <a href="#top" class="brand" aria-label="AdStudioLab home">
         <svg class="brand__badge" viewBox="0 0 40 40" aria-hidden="true">
-          <defs>
-            <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#38BDF8"/>
-              <stop offset="1" stop-color="#818CF8"/>
-            </linearGradient>
-          </defs>
-          <circle class="brand__ring" cx="20" cy="20" r="18" fill="none" stroke="url(#brandGrad)" stroke-width="2" stroke-dasharray="6 4"/>
-          <rect x="9" y="12" width="22" height="16" rx="3.5" fill="url(#brandGrad)"/>
-          <path class="brand__play" d="M17.5 16.2v7.6l6.2-3.8z" fill="#0B0F19"/>
+          <circle cx="20" cy="20" r="20" fill="#1877F2"/>
+          <circle class="brand__ring" cx="20" cy="20" r="15.5" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <path class="brand__play" d="M16.5 13.5v13l10.5-6.5z" fill="#FFFFFF"/>
         </svg>
-        <span class="brand__name">AdStudio<span>Lab</span></span>
+        <span class="brand__name">adstudiolab</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#gallery">Gallery</a>
@@ -45,38 +36,36 @@
     <!-- ================= Hero ================= -->
     <section class="hero">
       <div class="container hero__inner">
-        <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>AdStudioLab · HTML5 Banner Portfolio</p>
-        <h1 class="hero__title">Next-Gen <span class="gradient-text">HTML5 Display Advertising</span> &amp; Motion Graphics</h1>
-        <p class="hero__lead">
-          Animated banner campaigns built for performance marketers. Every creative is hand-tuned for
-          Google Display Network &amp; IAB specs, lightweight, and ready to upload.
-        </p>
+        <div class="hero__copy">
+          <p class="hero__brand">adstudiolab</p>
+          <h1 class="hero__title">Next-Gen HTML5 Display Advertising &amp; Motion Graphics</h1>
+          <p class="hero__lead">
+            Animated banner campaigns built for performance marketers. Every creative is hand-tuned for
+            Google Display Network &amp; IAB specs, lightweight, and ready to upload.
+          </p>
+          <ul class="pills" aria-label="Compliance highlights">
+            <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-8"/></svg>&lt;150KB Compliant</li>
+            <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>Google Ads &amp; IAB Ready</li>
+            <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>GSAP Powered</li>
+            <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>ClickTag Validated</li>
+          </ul>
+        </div>
 
-        <ul class="pills" aria-label="Compliance highlights">
-          <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17l6-6 4 4 6-8"/></svg>&lt;150KB Compliant</li>
-          <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>Google Ads &amp; IAB Ready</li>
-          <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>GSAP Powered</li>
-          <li class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>ClickTag Validated</li>
-        </ul>
-
-        <div class="hero__actions">
-          <a href="#" class="btn btn--primary btn--lg">
-            Hire on Fiverr
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#gallery" class="btn btn--glass btn--lg">Explore Ad Gallery</a>
-          <button type="button" class="btn btn--ghost btn--lg" data-copy-link>
+        <div class="hero-card">
+          <dl class="stats" aria-label="Portfolio stats">
+            <div><dt>Campaigns</dt><dd data-stat="campaigns">70</dd></div>
+            <div><dt>Live creatives</dt><dd data-stat="creatives">210</dd></div>
+            <div><dt>Avg. HTML payload</dt><dd data-stat="avgkb">—</dd></div>
+            <div><dt>Loop length</dt><dd data-stat="duration">—</dd></div>
+          </dl>
+          <a href="#" class="btn btn--primary btn--xl btn--block">Hire on Fiverr</a>
+          <button type="button" class="link-btn" data-copy-link>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
             Copy Portfolio Link
           </button>
+          <hr class="divider">
+          <a href="#gallery" class="btn btn--green btn--lg">Explore Ad Gallery</a>
         </div>
-
-        <dl class="stats" aria-label="Portfolio stats">
-          <div><dt>Campaigns</dt><dd data-stat="campaigns">70</dd></div>
-          <div><dt>Live creatives</dt><dd data-stat="creatives">210</dd></div>
-          <div><dt>Avg. HTML payload</dt><dd data-stat="avgkb">—</dd></div>
-          <div><dt>Loop length</dt><dd data-stat="duration">—</dd></div>
-        </dl>
       </div>
     </section>
 
@@ -84,10 +73,8 @@
     <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
       <div class="container">
         <div class="section-head">
-          <div>
-            <h2 id="gallery-title">Ad Gallery</h2>
-            <p>Every card is a live, sandboxed banner. Switch sizes, replay the animation, or inspect the specs.</p>
-          </div>
+          <h2 id="gallery-title">Ad Gallery</h2>
+          <p>Every card is a live, sandboxed banner. Switch sizes, replay the animation, or inspect the specs.</p>
         </div>
 
         <div class="toolbar" role="region" aria-label="Gallery controls">
@@ -97,7 +84,7 @@
             <label class="search">
               <span class="visually-hidden">Search campaigns</span>
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-              <input type="search" placeholder='Search e.g. "discount", "saas", "luxury"' autocomplete="off" data-search>
+              <input type="search" placeholder='Search campaigns, e.g. "discount", "saas", "luxury"' autocomplete="off" data-search>
               <kbd aria-hidden="true">/</kbd>
             </label>
 
@@ -119,14 +106,14 @@
         <div class="gallery" data-gallery></div>
 
         <div class="more">
-          <button type="button" class="btn btn--glass btn--lg" data-more hidden>Show more campaigns</button>
+          <button type="button" class="btn btn--secondary btn--lg btn--block" data-more hidden>Show more campaigns</button>
         </div>
 
         <div class="empty" data-empty hidden>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M8.5 11h5"/></svg>
           <h3>No campaigns match that search</h3>
           <p>Try another keyword or reset the filters.</p>
-          <button type="button" class="btn btn--glass" data-reset>Reset filters</button>
+          <button type="button" class="btn btn--primary" data-reset>Reset filters</button>
         </div>
       </div>
     </section>
@@ -135,18 +122,16 @@
     <section id="standards" class="standards" aria-labelledby="standards-title">
       <div class="container">
         <div class="section-head">
-          <div>
-            <h2 id="standards-title">Built to GDN spec, every time</h2>
-            <p>Every creative, across ten distinct creative styles, is a self-contained <code>index.html</code> built to Google Ads HTML5 rules.</p>
-          </div>
+          <h2 id="standards-title">Built to GDN spec, every time</h2>
+          <p>Every creative, across ten distinct creative styles, is a self-contained <code>index.html</code> built to Google Ads HTML5 rules.</p>
         </div>
         <ul class="standards__grid">
-          <li class="glass-card"><h3>ad.size meta</h3><p><code>&lt;meta name="ad.size"&gt;</code> declared to match each canvas exactly.</p></li>
-          <li class="glass-card"><h3>Official clickTag</h3><p>Declared in <code>&lt;head&gt;</code>; the full canvas calls <code>window.open(window.clickTag)</code>.</p></li>
-          <li class="glass-card"><h3>&lt;150KB payload</h3><p>No raster images or web fonts. Inline SVG, CSS and one CDN GSAP file.</p></li>
-          <li class="glass-card"><h3>≤15s animation</h3><p>6s loop played twice, then a clean resting end frame.</p></li>
-          <li class="glass-card"><h3>1px boundary</h3><p><code>#333</code> or <code>#e2e8f0</code> border for edge contrast on any page.</p></li>
-          <li class="glass-card"><h3>Graceful fallback</h3><p>If GSAP is blocked, the complete end frame still renders.</p></li>
+          <li class="panel"><span class="panel__icon" aria-hidden="true">&lt;/&gt;</span><h3>ad.size meta</h3><p><code>&lt;meta name="ad.size"&gt;</code> declared to match each canvas exactly.</p></li>
+          <li class="panel"><span class="panel__icon" aria-hidden="true">↗</span><h3>Official clickTag</h3><p>Declared in <code>&lt;head&gt;</code>; the full canvas calls <code>window.open(window.clickTag)</code>.</p></li>
+          <li class="panel"><span class="panel__icon" aria-hidden="true">KB</span><h3>&lt;150KB payload</h3><p>No raster images or web fonts. Inline SVG, CSS and one CDN GSAP file.</p></li>
+          <li class="panel"><span class="panel__icon" aria-hidden="true">15s</span><h3>≤15s animation</h3><p>6s loop played twice, then a clean resting end frame.</p></li>
+          <li class="panel"><span class="panel__icon" aria-hidden="true">▢</span><h3>1px boundary</h3><p><code>#333</code> or <code>#e2e8f0</code> border for edge contrast on any page.</p></li>
+          <li class="panel"><span class="panel__icon" aria-hidden="true">✓</span><h3>Graceful fallback</h3><p>If GSAP is blocked, the complete end frame still renders.</p></li>
         </ul>
       </div>
     </section>
@@ -155,19 +140,19 @@
   <!-- ================= Footer ================= -->
   <footer id="contact" class="site-footer">
     <div class="container">
-      <div class="cta-panel glass-card">
+      <div class="cta-panel panel">
         <h2>Ready to launch scroll-stopping display ads?</h2>
         <p>Custom HTML5 banner sets in every IAB size. Google Ads, DV360 &amp; programmatic ready, delivered with source files.</p>
         <div class="cta-panel__actions">
-          <a href="#" class="btn btn--primary btn--lg">
+          <a href="#" class="btn btn--green btn--lg">
             Hire on Fiverr
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
-          <button type="button" class="btn btn--ghost btn--lg" data-copy-link>Copy Portfolio Link</button>
+          <button type="button" class="btn btn--secondary btn--lg" data-copy-link>Copy Portfolio Link</button>
         </div>
       </div>
       <div class="site-footer__bottom">
-        <span>&copy; <span data-year>2026</span> AdStudioLab. All rights reserved.</span>
+        <span>AdStudioLab &copy; <span data-year>2026</span></span>
         <span>HTML5 · CSS3 · Vanilla JS · GSAP</span>
       </div>
     </div>
@@ -177,9 +162,9 @@
   <dialog class="modal" data-modal aria-labelledby="modal-title">
     <div class="modal__inner">
       <header class="modal__head">
-        <div>
-          <p class="modal__eyebrow" data-modal-industry></p>
+        <div class="modal__heading">
           <h2 id="modal-title" data-modal-title></h2>
+          <p class="modal__eyebrow" data-modal-industry></p>
         </div>
         <button type="button" class="icon-btn" data-modal-close aria-label="Close specs">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
