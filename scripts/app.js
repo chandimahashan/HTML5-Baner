@@ -68,7 +68,6 @@
   stat("campaigns", DATA.campaigns.length);
   stat("creatives", allKb.length);
   stat("avgkb", `${avgKb.toFixed(1)} KB`);
-  stat("duration", `${DATA.animation.total}s`);
   $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 
   /* ---------------- Tabs ---------------- */
