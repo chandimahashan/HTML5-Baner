@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>Helix CRM — HelixCRM Sales Suite | 300x250</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:300px;height:250px;overflow:hidden;background:#0B1120}
+#ad{position:relative;width:300px;height:250px;overflow:hidden;cursor:pointer;border:1px solid #333;background:linear-gradient(160deg,#0C2833 0%,#0B1120 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#F1F5F9;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#14B8A6}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#14B8A6,#F59E0B);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#9A9EA7}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#14B8A6;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(20,184,166,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#9A9EA7}
+#pn{z-index:3;background:linear-gradient(135deg,#14B8A6,#79AC60)}
+#pint{inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#FFFFFF;visibility:hidden}
+#pint b{display:block;font-weight:900;letter-spacing:-1px;line-height:1}
+#pbn,#pic,#pof{z-index:4;color:#FFFFFF}
+#pbn{font-weight:800}
+#pic svg{width:100%;height:100%}
+#pof b{display:block;font-weight:900;line-height:1;letter-spacing:-.5px}
+#pof span{font-weight:800;letter-spacing:1.5px;white-space:nowrap}
+#pn{left:0;top:0;width:112px;height:100%}
+#pint b{font-size:36px}
+#pbn{left:0px;top:16px;width:112px;text-align:center;font-size:12px}
+#pic{left:26px;top:84px;width:60px;height:60px}
+#pof{left:0px;top:134px;width:112px;text-align:center}
+#pof b{font-size:28px}
+#pof span{font-size:8px}
+#ct{left:128px;top:24px;width:156px}
+#hl{font-size:19px}
+#sub{margin-top:8px;font-size:11px;line-height:1.4}
+#cta{left:128px;bottom:16px;height:34px;padding:0 16px;font-size:12.5px}
+#legal{left:128px;bottom:6px;width:156px;font-size:7px}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="pn"></div>
+<div id="pint"><b>Pipeline</b><b>Chaos?</b></div>
+<span id="pbn" class="bn">Helix CRM</span>
+<div id="pic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="16" r="6"/><path d="M6 40c0-7 5-12 12-12s12 5 12 12"/><circle cx="34" cy="18" r="5"/><path d="M34 28c5 0 9 4 9 10"/></svg></div>
+<div id="ct"><div id="hl" class="hd">Close Deals<br><em>Faster</em></div><p id="sub">AI-scored leads &amp; auto follow-ups</p></div>
+<div id="cta"><span>Book a Demo</span><i id="shine"></i></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .set("#pint",{autoAlpha:1},0)
+    .from("#pint b",{y:28,autoAlpha:0,stagger:.15,duration:.45,ease:"power3.out"},.15)
+    .to("#pint",{autoAlpha:0,duration:.3},1.7)
+    .fromTo("#pn",{width:300},{width:112,duration:.7,ease:"power3.inOut"},1.95)
+    .from("#pbn",{autoAlpha:0,y:-8,duration:.35},2.5)
+    .from("#pic",{autoAlpha:0,scale:.4,rotation:-20,duration:.5,ease:"back.out(2)"},2.55)
+    .from("#hl",{autoAlpha:0,x:20,duration:.45,ease:"power3.out"},2.6)
+    .from("#sub",{autoAlpha:0,x:14,duration:.4},2.8)
+    .from("#cta",{autoAlpha:0,y:12,duration:.45,ease:"back.out(2)"},3.3)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

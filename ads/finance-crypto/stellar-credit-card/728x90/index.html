@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=728,height=90">
+<title>Stellar — Stellar Credit Card | 728x90</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:728px;height:90px;overflow:hidden;background:#0B0B1A}
+#ad{position:relative;width:728px;height:90px;overflow:hidden;cursor:pointer;border:1px solid #333;background:linear-gradient(160deg,#25273A 0%,#0B0B1A 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#F1F5F9;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#C7D2FE}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#C7D2FE,#818CF8);color:#0B0F19}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#9A9CA4}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#C7D2FE;color:#0B0F19;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(199,210,254,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#9A9CA4}
+#rays{border-radius:50%;background:repeating-conic-gradient(from 0deg,rgba(199,210,254,0.22) 0deg 7deg,transparent 7deg 20deg);-webkit-mask-image:radial-gradient(circle,#000 18%,transparent 68%);mask-image:radial-gradient(circle,#000 18%,transparent 68%)}
+#glow{border-radius:50%;background:radial-gradient(circle,rgba(129,140,248,0.45),transparent 65%)}
+#pod{border-radius:50%;background:radial-gradient(ellipse,rgba(199,210,254,0.55),transparent 70%)}
+#hero{color:#C7D2FE;filter:drop-shadow(0 0 8px rgba(199,210,254,0.6))}
+#hero svg{width:100%;height:100%}
+.pt{width:4px;height:4px;border-radius:50%;background:#818CF8}
+#bn{font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#C7D2FE}
+#it{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900;letter-spacing:-.5px;line-height:1.1;visibility:hidden}
+#it em{font-style:normal;color:#C7D2FE}
+#rays{left:-21px;top:-40px;width:170px;height:170px}
+#glow{left:22px;top:3px;width:84px;height:84px}
+#hero{left:43px;top:24px;width:42px;height:42px}
+#pod{left:29px;top:62px;width:70px;height:10px}
+#p0{left:34px;top:59px}
+#p1{left:91px;top:52px}
+#p2{left:48px;top:41px}
+#p3{left:84px;top:65px}
+#p4{left:59px;top:68px}
+#p5{left:99px;top:38px}
+#bn{left:134px;top:14px;font-size:9.5px}
+#it{left:134px;top:0;height:88px;display:flex;align-items:center;font-size:22px}
+#ct{left:134px;top:28px;width:350px}
+#hl{font-size:19px;white-space:nowrap}
+#sub{margin-top:4px;font-size:11px;white-space:nowrap}
+#cta{left:576px;top:18px;width:136px;height:40px;font-size:13px}
+#legal{left:566px;top:64px;width:156px;text-align:center}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="rays"></div>
+<div id="glow"></div>
+<div id="pod"></div>
+<i id="p0" class="pt"></i>
+<i id="p1" class="pt"></i>
+<i id="p2" class="pt"></i>
+<i id="p3" class="pt"></i>
+<i id="p4" class="pt"></i>
+<i id="p5" class="pt"></i>
+<div id="hero"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="40" height="28" rx="4"/><path d="M4 18h40"/><path d="M33 23l1.8 3.7 4 .6-2.9 2.8.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.8 4-.6z"/><path d="M10 30h10"/></svg></div>
+<span id="bn">Stellar</span>
+<div id="it">Metal Card. <em>Real Rewards.</em></div>
+<div id="ct"><div id="hl" class="hd">3% Cashback <em>on Everything</em></div><p id="sub">No annual fee in year one</p></div>
+<div id="cta"><span>Apply Now</span><i id="shine"></i></div>
+<p id="legal">Terms apply. Subject to status.</p>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .from("#glow",{scale:.3,autoAlpha:0,duration:1,ease:"power2.out"},0)
+    .from("#rays",{scale:.4,autoAlpha:0,duration:1.2,ease:"power2.out"},0)
+    .to("#rays",{rotation:45,duration:6,ease:"none"},0)
+    .from("#hero",{y:-50,scale:.5,autoAlpha:0,duration:.8,ease:"bounce.out"},.2)
+    .from("#pod",{scaleX:0,autoAlpha:0,duration:.5},.6)
+    .fromTo(".pt",{y:14,autoAlpha:0},{y:-22,autoAlpha:1,duration:.9,stagger:.2,yoyo:true,repeat:1,ease:"sine.out"},.5)
+    .from("#bn",{autoAlpha:0,letterSpacing:"10px",duration:.6},.3)
+    .fromTo("#it",{autoAlpha:0,y:12},{autoAlpha:1,y:0,duration:.45},.7)
+    .to("#it",{autoAlpha:0,y:-10,duration:.3},2)
+    .from("#hl",{autoAlpha:0,y:12,duration:.45,ease:"power3.out"},2.3)
+    .from("#sub",{autoAlpha:0,duration:.4},2.55)
+    .from("#cta",{autoAlpha:0,scale:.6,duration:.45,ease:"back.out(2)"},3.1)
+    .from("#legal",{autoAlpha:0,duration:.3},3.3)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

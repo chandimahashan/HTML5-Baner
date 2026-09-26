@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>PixelForge — PixelForge Design Tool | 300x250</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:300px;height:250px;overflow:hidden;background:#FAF5FF}
+#ad{position:relative;width:300px;height:250px;overflow:hidden;cursor:pointer;border:1px solid #e2e8f0;background:linear-gradient(160deg,#F4EAFE 0%,#FAF5FF 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#2E1065;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#A855F7}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#A855F7,#F97316);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#7C67A0}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#A855F7;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(168,85,247,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#7C67A0}
+.bl{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}
+#b1{background:linear-gradient(135deg,#A855F7,#F97316)}
+#b2{background:rgba(249,115,22,0.55)}
+#b3{background:rgba(168,85,247,0.35)}
+#hero{color:#FFFFFF}
+#hero svg{width:100%;height:100%}
+#logo{display:flex;align-items:center;gap:8px}
+.mk{border-radius:50%}
+#cta{border-radius:999px}
+#it{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900;line-height:1.05;letter-spacing:-.5px;visibility:hidden}
+#it em{font-style:normal;color:#A855F7}
+#b1{left:172px;top:96px;width:180px;height:180px}
+#b2{left:196px;top:18px;width:36px;height:36px}
+#b3{left:140px;top:204px;width:22px;height:22px}
+#hero{left:200px;top:134px;width:70px;height:70px}
+#logo{left:14px;top:14px}
+.mk{width:22px;height:22px}
+.bn{font-size:12.5px}
+#bc,#it{left:16px;top:46px;width:156px}
+#hl{font-size:18px}
+#it{font-size:26px}
+#sub{margin-top:8px;font-size:11px;line-height:1.4}
+#cta{left:16px;bottom:16px;height:36px;padding:0 20px;font-size:13px}
+#legal{left:16px;bottom:5px;font-size:7px}
+
+.bdg{border-radius:55% 45% 50% 50%/50% 55% 45% 50%}
+.bdg::before{border-radius:inherit}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="b1" class="bl"></div>
+<div id="b2" class="bl"></div>
+<div id="b3" class="bl"></div>
+<div id="hero"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 40l4-12L32 8l8 8-20 20z"/><path d="M28 12l8 8M8 40l10-4"/><circle cx="14" cy="34" r="1.5"/></svg></div>
+<div id="logo"><span class="mk"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 40l4-12L32 8l8 8-20 20z"/><path d="M28 12l8 8M8 40l10-4"/><circle cx="14" cy="34" r="1.5"/></svg></span><span class="bn">PixelForge</span></div>
+<div id="it">Design<br><em>Together</em></div>
+<div id="bc"><div id="hl" class="hd">Collaborative<br><em>Design Tool</em></div><p id="sub">Prototype, review &amp; hand off</p></div>
+<div id="cta"><span>Design Free</span><i id="shine"></i></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .from("#b1",{scale:0,duration:.9,ease:"elastic.out(1,.6)"},.1)
+    .to("#b1",{borderRadius:"35% 65% 60% 40%/45% 55% 45% 55%",rotation:12,duration:2.8,ease:"sine.inOut",yoyo:true,repeat:1},.3)
+    .from("#b2",{scale:0,duration:.6,ease:"back.out(2)"},.4)
+    .to("#b2",{x:6,y:-8,duration:1.2,yoyo:true,repeat:3,ease:"sine.inOut"},1)
+    .from("#b3",{scale:0,duration:.5,ease:"back.out(2)"},.6)
+    .to("#b3",{y:8,duration:1.2,yoyo:true,repeat:3,ease:"sine.inOut"},1.1)
+    .from("#hero",{scale:0,rotation:-30,duration:.6,ease:"back.out(2)"},.7)
+    .from("#logo",{autoAlpha:0,y:-8,duration:.4},.3)
+    .fromTo("#it",{autoAlpha:0,y:14},{autoAlpha:1,y:0,duration:.5,ease:"power3.out"},.5)
+    .to("#it",{autoAlpha:0,y:-12,duration:.3},1.9)
+    .from("#hl",{autoAlpha:0,y:14,duration:.45,ease:"power3.out"},2.2)
+    .from("#sub",{autoAlpha:0,y:8,duration:.4},2.45)
+    .from("#cta",{autoAlpha:0,scale:.6,duration:.45,ease:"back.out(2)"},3.2)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

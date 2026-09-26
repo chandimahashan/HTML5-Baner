@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=728,height=90">
+<title>Summit Chalets — Summit Ski Chalets | 728x90</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:728px;height:90px;overflow:hidden;background:#0F172A}
+#ad{position:relative;width:728px;height:90px;overflow:hidden;cursor:pointer;border:1px solid #333;background:linear-gradient(160deg,#152E47 0%,#0F172A 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#F8FAFC;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#38BDF8}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#38BDF8,#E2E8F0);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#9FA4AC}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#38BDF8;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(56,189,248,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#9FA4AC}
+#pn{z-index:3;background:linear-gradient(135deg,#38BDF8,#85D0F4)}
+#pint{inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#FFFFFF;visibility:hidden}
+#pint b{display:block;font-weight:900;letter-spacing:-1px;line-height:1}
+#pbn,#pic,#pof{z-index:4;color:#FFFFFF}
+#pbn{font-weight:800}
+#pic svg{width:100%;height:100%}
+#pof b{display:block;font-weight:900;line-height:1;letter-spacing:-.5px}
+#pof span{font-weight:800;letter-spacing:1.5px;white-space:nowrap}
+#pn{left:0;top:0;width:190px;height:100%}
+#pint{flex-direction:row;gap:.3em}
+#pint b{font-size:40px}
+#pic{left:18px;top:26px;width:36px;height:36px}
+#pbn{left:62px;top:0;height:88px;display:flex;align-items:center;font-size:14px}
+#pof{left:486px;top:0;width:82px;height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#38BDF8}
+#pof b{font-size:24px}
+#pof span{font-size:7px}
+#ct{left:206px;top:0;width:270px;height:88px;display:flex;flex-direction:column;justify-content:center}
+#hl{font-size:19px;white-space:nowrap}
+#sub{margin-top:4px;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#cta{left:576px;top:24px;width:136px;height:40px;font-size:13px}
+#legal{left:566px;top:64px;width:156px;text-align:center}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="pn"></div>
+<div id="pint"><b>Ski-In,</b><b>Ski-Out</b></div>
+<span id="pbn" class="bn">Summit Chalets</span>
+<div id="pic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 26L24 8l20 18"/><path d="M9 22v20h30V22"/><path d="M20 42V32h8v10M32 12v-4h4v8"/><path d="M4 44h40"/></svg></div>
+<div id="ct"><div id="hl" class="hd">Alpine <em>Chalets</em></div><p id="sub">Fireplaces, hot tubs &amp; mountain views</p></div>
+<div id="cta"><span>Reserve a Chalet</span><i id="shine"></i></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .set("#pint",{autoAlpha:1},0)
+    .from("#pint b",{y:28,autoAlpha:0,stagger:.15,duration:.45,ease:"power3.out"},.15)
+    .to("#pint",{autoAlpha:0,duration:.3},1.7)
+    .fromTo("#pn",{width:728},{width:190,duration:.7,ease:"power3.inOut"},1.95)
+    .from("#pbn",{autoAlpha:0,y:-8,duration:.35},2.5)
+    .from("#pic",{autoAlpha:0,scale:.4,rotation:-20,duration:.5,ease:"back.out(2)"},2.55)
+    .from("#hl",{autoAlpha:0,x:20,duration:.45,ease:"power3.out"},2.6)
+    .from("#sub",{autoAlpha:0,x:14,duration:.4},2.8)
+    .from("#cta",{autoAlpha:0,y:12,duration:.45,ease:"back.out(2)"},3.3)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

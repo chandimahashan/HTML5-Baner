@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>Nest — Nest Student Living | 300x250</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:300px;height:250px;overflow:hidden;background:#1D1D1D}
+#ad{position:relative;width:300px;height:250px;overflow:hidden;cursor:pointer;border:1px solid #333;background:linear-gradient(160deg,#3D2820 0%,#1D1D1D 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#FAFAFA;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#FF6B35}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#FF6B35,#FFE66D);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#A6A6A6}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#FF6B35;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(255,107,53,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#A6A6A6}
+.kw{inset:0;z-index:4;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 10px;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.95;visibility:hidden}
+#k1{font-size:44px}
+#k2{font-size:62px;color:#FF6B35}
+#fl{inset:0;z-index:6;background:#FF6B35;transform:scaleY(0)}
+#br{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+#br .mk{width:18px;height:18px;border-radius:5px}
+#hl{font-size:32px;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:1}
+.ln{display:block;overflow:hidden;padding:1px 0 2px}
+.lt{display:inline-block}
+.lt2{background:#FF6B35;color:#FFFFFF;padding:0 .12em}
+#sub{font-size:11px;line-height:1.4}
+#of{padding:3px 8px;border:2px solid #FF6B35;border-radius:4px;color:#FF6B35;font-size:12px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;transform:rotate(-6deg);white-space:nowrap}
+#br{left:14px;top:14px}
+#kc{left:14px;top:44px;width:272px}
+#sub{margin-top:10px}
+#of{right:14px;top:12px}
+#cta{left:14px;bottom:16px;height:36px;padding:0 20px;font-size:13px}
+#legal{right:14px;bottom:8px;max-width:110px;text-align:right}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="k1" class="kw">Your Room</div>
+<div id="k2" class="kw">Awaits</div>
+<div id="br"><span class="mk"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="24" r="9"/><path d="M25 24h18M37 24v6M42 24v4"/><circle cx="16" cy="24" r="3"/></svg></span><span>Nest</span></div>
+<div id="kc"><div id="hl"><span class="ln"><span class="lt">Rooms Near</span></span><span class="ln"><span class="lt lt2">Campus</span></span></div><p id="sub">All bills included · Gym · Wi-Fi</p></div>
+<div id="of">$0 DEPOSIT</div>
+<div id="cta"><span>Book a Room</span><i id="shine"></i></div>
+<div id="fl"></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .fromTo("#k1",{autoAlpha:0,scale:2.4},{autoAlpha:1,scale:1,duration:.35,ease:"power4.out"},.1)
+    .to("#k1",{autoAlpha:0,scale:.7,duration:.2,ease:"power2.in"},.85)
+    .fromTo("#k2",{autoAlpha:0,yPercent:60},{autoAlpha:1,yPercent:0,duration:.35,ease:"power4.out"},.95)
+    .fromTo("#fl",{scaleY:0,transformOrigin:"50% 100%"},{scaleY:1,duration:.3,ease:"power3.in"},1.6)
+    .set("#k2",{autoAlpha:0},1.9)
+    .to("#fl",{scaleY:0,transformOrigin:"50% 0%",duration:.35,ease:"power3.out"},1.95)
+    .from("#br",{autoAlpha:0,y:-8,duration:.35},2.15)
+    .from(".lt",{yPercent:110,duration:.5,stagger:.12,ease:"power4.out"},2.2)
+    .from("#sub",{autoAlpha:0,duration:.4},2.75)
+    .from("#of",{scale:0,rotation:-40,duration:.5,ease:"back.out(2.5)"},2.9)
+    .from("#cta",{autoAlpha:0,x:-16,duration:.4,ease:"power3.out"},3.2)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

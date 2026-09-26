@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>Hygge &amp; Co. — Nordic Home Furniture | 300x250</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:300px;height:250px;overflow:hidden;background:#F4F1EA}
+#ad{position:relative;width:300px;height:250px;overflow:hidden;cursor:pointer;border:1px solid #e2e8f0;background:linear-gradient(160deg,#EAE9E0 0%,#F4F1EA 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#2A2723;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:0;line-height:1.1}
+.hd em{font-style:italic;color:#5F7A61}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#5F7A61,#C7784F);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:.5px;white-space:nowrap}
+#sub{color:#77746F}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:0px;background:#5F7A61;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(95,122,97,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#77746F}
+#art{width:128px;height:250px;overflow:hidden}
+#art>svg{display:block}
+#no{font-size:8.5px;letter-spacing:2.5px;font-weight:700;text-transform:uppercase;color:#5F7A61}
+#hl{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:0;line-height:1.12}
+#hl em{font-style:italic;color:#5F7A61}
+#rule{display:block;width:28px;height:1px;margin:12px 0;background:#2A2723}
+#sub{font-size:10.5px;line-height:1.45}
+#cta{background:transparent;color:#2A2723;border:1px solid #2A2723;box-shadow:none;text-transform:uppercase;letter-spacing:1.6px;font-size:10px}
+#shine{background:linear-gradient(90deg,transparent,rgba(95,122,97,0.35),transparent)}
+#art{right:0;top:0}
+#no{left:16px;top:16px;width:150px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#ec{left:16px;top:38px;width:150px}
+#hl{font-size:20px}
+#cta{left:16px;bottom:18px;height:30px;padding:0 14px}
+#legal{left:16px;bottom:5px;font-size:7px;max-width:150px}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="art"><svg width="128" height="250" viewBox="0 0 128 250" aria-hidden="true"><rect width="128" height="250" fill="#5F7A61"/><path d="M28.2 250V110.8A35.8 35.8 0 0 1 99.8 110.8V250Z" fill="#F4F1EA" opacity=".92"/><circle class="sn" cx="92.2" cy="60.0" r="16.6" fill="#C7784F"/><path class="gl" d="M10.2 222.0H64.0" stroke="#C7784F" stroke-width="1"/><path class="gl" d="M10.2 232.0H79.4" stroke="#C7784F" stroke-width="1"/><path class="gl" d="M10.2 242.0H94.7" stroke="#C7784F" stroke-width="1"/><svg x="10" y="10" width="22" height="22" viewBox="0 0 48 48" fill="none" stroke="#F4F1EA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22v-6a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v6"/><path d="M4 26a4 4 0 0 1 8 0v4h24v-4a4 4 0 0 1 8 0v10H4z"/><path d="M8 36v4M40 36v4"/></svg></svg></div>
+<p id="no">Hygge &amp; Co. · No. 21</p>
+<div id="ec"><div id="hl">Slow Living,<br><em>Made Simple</em></div><i id="rule"></i><p id="sub">Solid oak furniture, built by hand</p></div>
+<div id="cta"><span>Shop Collection</span><i id="shine"></i></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .fromTo("#art",{clipPath:"inset(100% 0% 0% 0%)"},{clipPath:"inset(0% 0% 0% 0%)",duration:1.1,ease:"power3.inOut"},.1)
+    .from("#art .sn",{scale:0,transformOrigin:"50% 50%",duration:.7,ease:"back.out(1.6)"},.9)
+    .from("#art .gl",{scaleX:0,transformOrigin:"0% 50%",stagger:.12,duration:.5},1)
+    .from("#no",{autoAlpha:0,x:-10,duration:.4},.6)
+    .from("#hl",{autoAlpha:0,letterSpacing:"6px",duration:.9,ease:"power2.out"},1)
+    .from("#rule",{scaleX:0,transformOrigin:"0% 50%",duration:.5},1.6)
+    .from("#sub",{autoAlpha:0,y:8,duration:.4},1.8)
+    .from("#cta",{autoAlpha:0,y:10,duration:.45},2.3)
+    .to("#art>svg",{scale:1.06,transformOrigin:"50% 50%",duration:3.4,ease:"sine.inOut"},2.5)
+    .to("#shine",{x:220,duration:.9,ease:"power2.inOut"},4.4)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=728,height=90">
+<title>Atelier Nord — Atelier Nord Architects | 728x90</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:728px;height:90px;overflow:hidden;background:#F5F5F4}
+#ad{position:relative;width:728px;height:90px;overflow:hidden;cursor:pointer;border:1px solid #e2e8f0;background:linear-gradient(160deg,#F0EAE4 0%,#F5F5F4 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#1C1917;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#B45309}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#B45309,#57534E);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#6E6D6B}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:0px;background:#B45309;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(180,83,9,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#6E6D6B}
+#art{width:170px;height:88px;overflow:hidden}
+#art>svg{display:block}
+#no{font-size:8.5px;letter-spacing:2.5px;font-weight:700;text-transform:uppercase;color:#B45309}
+#hl{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:0;line-height:1.12}
+#hl em{font-style:italic;color:#B45309}
+#rule{display:block;width:28px;height:1px;margin:12px 0;background:#1C1917}
+#sub{font-size:10.5px;line-height:1.45}
+#cta{background:transparent;color:#1C1917;border:1px solid #1C1917;box-shadow:none;text-transform:uppercase;letter-spacing:1.6px;font-size:10px}
+#shine{background:linear-gradient(90deg,transparent,rgba(180,83,9,0.35),transparent)}
+#no{left:16px;top:14px}
+#ec{left:16px;top:28px;width:350px}
+#hl{font-size:22px;white-space:nowrap}
+#rule{display:none}
+#sub{margin-top:4px;font-size:11px}
+#art{left:384px;top:0}
+#cta{left:576px;top:24px;width:136px;height:38px}
+#legal{left:566px;top:62px;width:156px;text-align:center}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="art"><svg width="170" height="88" viewBox="0 0 170 88" aria-hidden="true"><rect width="170" height="88" fill="#B45309"/><path d="M37.4 88V74.0A47.6 47.6 0 0 1 132.6 74.0V88Z" fill="#F5F5F4" opacity=".92"/><circle class="sn" cx="122.4" cy="21.1" r="11.4" fill="#57534E"/><path class="gl" d="M13.6 76.2H85.0" stroke="#57534E" stroke-width="1"/><path class="gl" d="M13.6 79.7H105.4" stroke="#57534E" stroke-width="1"/><path class="gl" d="M13.6 83.2H125.8" stroke="#57534E" stroke-width="1"/><svg x="10" y="10" width="22" height="22" viewBox="0 0 48 48" fill="none" stroke="#F5F5F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="9" r="3"/><path d="M22 12L10 42M26 12l12 30M14 32h20"/></svg></svg></div>
+<p id="no">Atelier Nord · No. 33</p>
+<div id="ec"><div id="hl">Architecture <em>With Intent</em></div><i id="rule"></i><p id="sub">Residential &amp; commercial design</p></div>
+<div id="cta"><span>View Portfolio</span><i id="shine"></i></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .fromTo("#art",{clipPath:"inset(0% 100% 0% 0%)"},{clipPath:"inset(0% 0% 0% 0%)",duration:1.1,ease:"power3.inOut"},.1)
+    .from("#art .sn",{scale:0,transformOrigin:"50% 50%",duration:.7,ease:"back.out(1.6)"},.9)
+    .from("#art .gl",{scaleX:0,transformOrigin:"0% 50%",stagger:.12,duration:.5},1)
+    .from("#no",{autoAlpha:0,x:-10,duration:.4},.6)
+    .from("#hl",{autoAlpha:0,letterSpacing:"6px",duration:.9,ease:"power2.out"},1)
+    .from("#sub",{autoAlpha:0,y:8,duration:.4},1.8)
+    .from("#cta",{autoAlpha:0,y:10,duration:.45},2.3)
+    .to("#art>svg",{scale:1.06,transformOrigin:"50% 50%",duration:3.4,ease:"sine.inOut"},2.5)
+    .to("#shine",{x:220,duration:.9,ease:"power2.inOut"},4.4)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

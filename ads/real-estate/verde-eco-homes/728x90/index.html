@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=728,height=90">
+<title>Verde Homes — Verde Eco Homes | 728x90</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:728px;height:90px;overflow:hidden;background:#F0FDF4}
+#ad{position:relative;width:728px;height:90px;overflow:hidden;cursor:pointer;border:1px solid #e2e8f0;background:linear-gradient(160deg,#E1F7E8 0%,#F0FDF4 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#14532D;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#16A34A}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#16A34A,#A3E635);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#689479}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#16A34A;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(22,163,74,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#689479}
+.bl{border-radius:60% 40% 30% 70%/60% 30% 70% 40%}
+#b1{background:linear-gradient(135deg,#16A34A,#A3E635)}
+#b2{background:rgba(163,230,53,0.55)}
+#b3{background:rgba(22,163,74,0.35)}
+#hero{color:#FFFFFF}
+#hero svg{width:100%;height:100%}
+#logo{display:flex;align-items:center;gap:8px}
+.mk{border-radius:50%}
+#cta{border-radius:999px}
+#it{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:900;line-height:1.05;letter-spacing:-.5px;visibility:hidden}
+#it em{font-style:normal;color:#16A34A}
+#b1{left:462px;top:-46px;width:170px;height:170px}
+#b2{left:160px;top:56px;width:34px;height:34px}
+#b3{left:176px;top:6px;width:18px;height:18px}
+#hero{left:516px;top:20px;width:50px;height:50px}
+#logo{left:16px;top:0;height:88px}
+.mk{width:36px;height:36px}
+.bn{font-size:16px}
+#bc,#it{left:200px;top:0;width:250px;height:88px;display:flex;flex-direction:column;justify-content:center}
+#hl{font-size:19px;white-space:nowrap}
+#it{font-size:24px}
+#sub{margin-top:4px;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#cta{left:590px;top:24px;width:124px;height:40px;font-size:13px}
+#legal{left:580px;top:64px;width:144px;text-align:center}
+
+.bdg{border-radius:55% 45% 50% 50%/50% 55% 45% 50%}
+.bdg::before{border-radius:inherit}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="b1" class="bl"></div>
+<div id="b2" class="bl"></div>
+<div id="b3" class="bl"></div>
+<div id="hero"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22L24 8l18 14"/><path d="M10 19v23h28V19"/><path d="M24 36c0-7 4-11 9-11 0 6-4 11-9 11zM24 36v6"/></svg></div>
+<div id="logo"><span class="mk"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22L24 8l18 14"/><path d="M10 19v23h28V19"/><path d="M24 36c0-7 4-11 9-11 0 6-4 11-9 11zM24 36v6"/></svg></span><span class="bn">Verde Homes</span></div>
+<div id="it">Live <em>Sustainably</em></div>
+<div id="bc"><div id="hl" class="hd">Net-Zero <em>Family Homes</em></div><p id="sub">Solar-powered, energy-smart living</p></div>
+<div id="cta"><span>Tour Show Home</span><i id="shine"></i></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .from("#b1",{scale:0,duration:.9,ease:"elastic.out(1,.6)"},.1)
+    .to("#b1",{borderRadius:"35% 65% 60% 40%/45% 55% 45% 55%",rotation:12,duration:2.8,ease:"sine.inOut",yoyo:true,repeat:1},.3)
+    .from("#b2",{scale:0,duration:.6,ease:"back.out(2)"},.4)
+    .to("#b2",{x:6,y:-8,duration:1.2,yoyo:true,repeat:3,ease:"sine.inOut"},1)
+    .from("#b3",{scale:0,duration:.5,ease:"back.out(2)"},.6)
+    .to("#b3",{y:8,duration:1.2,yoyo:true,repeat:3,ease:"sine.inOut"},1.1)
+    .from("#hero",{scale:0,rotation:-30,duration:.6,ease:"back.out(2)"},.7)
+    .from("#logo",{autoAlpha:0,y:-8,duration:.4},.3)
+    .fromTo("#it",{autoAlpha:0,y:14},{autoAlpha:1,y:0,duration:.5,ease:"power3.out"},.5)
+    .to("#it",{autoAlpha:0,y:-12,duration:.3},1.9)
+    .from("#hl",{autoAlpha:0,y:14,duration:.45,ease:"power3.out"},2.2)
+    .from("#sub",{autoAlpha:0,y:8,duration:.4},2.45)
+    .from("#cta",{autoAlpha:0,scale:.6,duration:.45,ease:"back.out(2)"},3.2)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

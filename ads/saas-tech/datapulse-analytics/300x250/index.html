@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>DataPulse — DataPulse Analytics | 300x250</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:300px;height:250px;overflow:hidden;background:#0A0F1F}
+#ad{position:relative;width:300px;height:250px;overflow:hidden;cursor:pointer;border:1px solid #333;background:linear-gradient(160deg,#2B1D34 0%,#0A0F1F 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#F8FAFC;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#F472B6}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#F472B6,#60A5FA);color:#FFFFFF}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#9EA1A8}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#F472B6;color:#FFFFFF;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(244,114,182,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#9EA1A8}
+#logo{display:flex;align-items:center;gap:8px}
+#num{display:block;font-weight:900;letter-spacing:-1px;line-height:1;color:#F472B6;font-variant-numeric:tabular-nums}
+#st span{font-size:10.5px;color:#9EA1A8}
+#ch{width:300px;height:100px}
+#ch svg{display:block}
+#dr{opacity:0}
+#logo{left:14px;top:12px}
+.mk{width:22px;height:22px;border-radius:6px}
+.bn{font-size:12.5px}
+#st{left:16px;top:38px}
+#num{font-size:34px}
+#ct{left:16px;top:96px;width:268px}
+#hl{font-size:18px}
+#ch{left:0;bottom:0}
+#cta{left:16px;bottom:14px;height:32px;padding:0 18px;font-size:12.5px}
+#legal{right:12px;bottom:6px;max-width:130px;text-align:right}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="logo"><span class="mk"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 42h36"/><path d="M11 42V30h6v12M21 42V20h6v22M31 42V10h6v32"/></svg></span><span class="bn">DataPulse</span></div>
+<div id="ch"><svg width="300" height="100" viewBox="0 0 300 100" aria-hidden="true"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F472B6" stop-opacity=".35"/><stop offset="1" stop-color="#F472B6" stop-opacity="0"/></linearGradient></defs><path d="M0 25H300" stroke="rgba(248,250,252,0.08)" stroke-dasharray="3 5"/><path d="M0 50H300" stroke="rgba(248,250,252,0.08)" stroke-dasharray="3 5"/><path d="M0 75H300" stroke="rgba(248,250,252,0.08)" stroke-dasharray="3 5"/><path id="ar" d="M0.0 75.4L37.5 70.3L75.0 65.7L112.5 44.2L150.0 44.0L187.5 30.2L225.0 27.3L262.5 14.8L294.0 9.9L294.0 100L0 100Z" fill="url(#ag)"/><path id="ln" d="M0.0 75.4L37.5 70.3L75.0 65.7L112.5 44.2L150.0 44.0L187.5 30.2L225.0 27.3L262.5 14.8L294.0 9.9" fill="none" stroke="#F472B6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"/><circle id="dr" cx="294.0" cy="9.9" r="4" fill="none" stroke="#F472B6" stroke-width="1.5"/><circle id="dt" cx="294.0" cy="9.9" r="4" fill="#F472B6"/></svg></div>
+<div id="st"><b id="num">3.4x</b><span>faster insights</span></div>
+<div id="ct"><div id="hl" class="hd">Real-Time<br><em>Analytics</em></div></div>
+<div id="cta"><span>Start Free Trial</span><i id="shine"></i></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  var N={v:0},E=document.getElementById("num");function F(v){return ""+v.toFixed(1).replace(/\B(?=(\d{3})+(?!\d))/g,",")+"x"}
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .from("#logo",{autoAlpha:0,duration:.4},0)
+    .from("#st",{autoAlpha:0,y:10,duration:.35},.2)
+    .fromTo(N,{v:0},{v:3.4,duration:1.5,ease:"power2.out",onUpdate:function(){E.textContent=F(N.v)}},.2)
+    .fromTo("#ln",{attr:{"stroke-dashoffset":1}},{attr:{"stroke-dashoffset":0},duration:1.5,ease:"power2.inOut"},.3)
+    .from("#ar",{autoAlpha:0,duration:.8},1.2)
+    .from("#dt",{scale:0,transformOrigin:"50% 50%",duration:.35,ease:"back.out(3)"},1.75)
+    .fromTo("#dr",{scale:1,autoAlpha:.9,transformOrigin:"50% 50%"},{scale:3.2,autoAlpha:0,duration:1,repeat:1,immediateRender:false},2)
+    .from("#hl",{autoAlpha:0,y:12,duration:.45,ease:"power3.out"},2.3)
+    .from("#cta",{autoAlpha:0,scale:.6,duration:.45,ease:"back.out(2)"},3.2)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>

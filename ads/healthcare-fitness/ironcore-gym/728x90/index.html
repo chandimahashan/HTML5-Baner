@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=728,height=90">
+<title>IronCore — IronCore Gym | 728x90</title>
+<script type="text/javascript">var clickTag = "https://www.google.com";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:728px;height:90px;overflow:hidden;background:#0A0A0A}
+#ad{position:relative;width:728px;height:90px;overflow:hidden;cursor:pointer;border:1px solid #333;background:linear-gradient(160deg,#29220A 0%,#0A0A0A 72%);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#FAFAFA;-webkit-font-smoothing:antialiased;user-select:none}
+#ad>*{position:absolute}
+.hd{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.hd em{font-style:normal;color:#EAB308}
+.mk{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#EAB308,#EF4444);color:#0B0F19}
+.mk svg{width:62%;height:62%}
+.bn{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+#sub{color:#9F9F9F}
+#cta{z-index:2;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;border-radius:10px;background:#EAB308;color:#0B0F19;font-weight:700;letter-spacing:.2px;box-shadow:0 6px 16px rgba(234,179,8,0.3)}
+#cta span{position:relative;z-index:1}
+#shine{position:absolute;left:0;top:-10px;width:30px;height:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-60px) skewX(-20deg)}
+#legal{font-size:8px;line-height:1.3;color:#9F9F9F}
+.kw{inset:0;z-index:4;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 10px;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:.95;visibility:hidden}
+#k1{font-size:54px}
+#k2{font-size:54px;color:#EAB308}
+#fl{inset:0;z-index:6;background:#EAB308;transform:scaleY(0)}
+#br{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+#br .mk{width:18px;height:18px;border-radius:5px}
+#hl{font-size:28px;font-weight:900;text-transform:uppercase;letter-spacing:-1px;line-height:1}
+.ln{display:block;overflow:hidden;padding:1px 0 2px}
+.lt{display:inline-block}
+.lt2{background:#EAB308;color:#0B0F19;padding:0 .12em}
+#sub{font-size:11px;line-height:1.4}
+#of{padding:3px 8px;border:2px solid #EAB308;border-radius:4px;color:#EAB308;font-size:12px;font-weight:900;letter-spacing:.5px;text-transform:uppercase;transform:rotate(-6deg);white-space:nowrap}
+#br{left:16px;top:11px}
+#kc{left:16px;top:25px;width:470px}
+.ln{display:inline-block;margin-right:.22em}
+#hl{white-space:nowrap}
+#sub{margin-top:3px;white-space:nowrap}
+#of{left:468px;top:32px;font-size:11px}
+#cta{left:576px;top:24px;width:136px;height:40px;font-size:13px}
+#legal{left:566px;top:64px;width:156px;text-align:center}
+</style>
+</head>
+<body>
+<div id="ad" onclick="window.open(window.clickTag)">
+<div id="k1" class="kw">No</div>
+<div id="k2" class="kw">Excuses</div>
+<div id="br"><span class="mk"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 24h16"/><rect x="8" y="14" width="8" height="20" rx="2"/><rect x="32" y="14" width="8" height="20" rx="2"/><path d="M4 19v10M44 19v10"/></svg></span><span>IronCore</span></div>
+<div id="kc"><div id="hl"><span class="ln"><span class="lt">Stronger</span></span><span class="ln"><span class="lt lt2">Every Rep</span></span></div><p id="sub">24/7 access · Pro coaches</p></div>
+<div id="of">$1 1ST MONTH</div>
+<div id="cta"><span>Join Now</span><i id="shine"></i></div>
+<div id="fl"></div>
+</div>
+<script type="text/javascript">
+(function () {
+  if (!window.gsap) return; // fallback: the static end frame stays visible
+  // 6s loop x 2 plays + 1s pause = 13s total, then rests on the end frame
+  gsap.timeline({ repeat: 1, repeatDelay: 1 })
+    .fromTo("#k1",{autoAlpha:0,scale:2.4},{autoAlpha:1,scale:1,duration:.35,ease:"power4.out"},.1)
+    .to("#k1",{autoAlpha:0,scale:.7,duration:.2,ease:"power2.in"},.85)
+    .fromTo("#k2",{autoAlpha:0,yPercent:60},{autoAlpha:1,yPercent:0,duration:.35,ease:"power4.out"},.95)
+    .fromTo("#fl",{scaleY:0,transformOrigin:"50% 100%"},{scaleY:1,duration:.3,ease:"power3.in"},1.6)
+    .set("#k2",{autoAlpha:0},1.9)
+    .to("#fl",{scaleY:0,transformOrigin:"50% 0%",duration:.35,ease:"power3.out"},1.95)
+    .from("#br",{autoAlpha:0,y:-8,duration:.35},2.15)
+    .from(".lt",{yPercent:110,duration:.5,stagger:.12,ease:"power4.out"},2.2)
+    .from("#sub",{autoAlpha:0,duration:.4},2.75)
+    .from("#of",{scale:0,rotation:-40,duration:.5,ease:"back.out(2.5)"},2.9)
+    .from("#cta",{autoAlpha:0,x:-16,duration:.4,ease:"power3.out"},3.2)
+    .to("#cta",{scale:1.06,duration:.25,yoyo:true,repeat:3,ease:"sine.inOut"},4.3)
+    .to("#shine",{x:220,duration:.8,ease:"power2.inOut"},4.45)
+    .set({},{},6);
+})();
+</script>
+</body>
+</html>
