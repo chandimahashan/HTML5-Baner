@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdStudioLab — Interactive HTML5 Banner Showcase</title>
+  <meta name="description" content="Google Ads & IAB-compliant HTML5 display banners — under 150KB, animated with GSAP, clickTag ready.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="AdStudioLab home">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#38BDF8"/>
+          <rect x="7" y="9" width="18" height="14" rx="2.5" fill="none" stroke="#0B0F19" stroke-width="2.4"/>
+          <path d="M14 13.2v5.6l4.6-2.8z" fill="#0B0F19"/>
+        </svg>
+        AdStudio<span>Lab</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#showcase">Showcase</a>
+        <a href="#specs">Specs</a>
+        <a href="#contact" class="nav__cta">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== Hero ========== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow"><span class="eyebrow__dot"></span>HTML5 Display Advertising Studio</p>
+        <h1>Interactive <span class="gradient-text">HTML5 Banner</span> Showcase</h1>
+        <p class="hero__sub">
+          Display ads built for <strong>Google Ads</strong> &amp; <strong>IAB</strong> standards. Every creative ships
+          <strong>under 150KB</strong>, animates smoothly with <strong>GSAP</strong>, and has the
+          official clickTag wired in, so it's ready to upload.
+        </p>
+        <div class="hero__actions">
+          <a href="#showcase" class="btn btn--primary">View Live Banners</a>
+          <a href="#contact" class="btn btn--ghost">Start a Project</a>
+        </div>
+        <ul class="stats">
+          <li><strong>3</strong><span>IAB standard sizes</span></li>
+          <li><strong>&lt;150KB</strong><span>per creative</span></li>
+          <li><strong>GSAP 3</strong><span>GPU-friendly motion</span></li>
+          <li><strong>100%</strong><span>clickTag ready</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== Showcase ========== -->
+    <section id="showcase" class="showcase">
+      <div class="container">
+        <div class="section-head">
+          <h2>Live Banner Previews</h2>
+          <p>Each banner runs in its own sandboxed iframe at its exact ad size. Use <em>Replay</em> to restart one banner without reloading the page.</p>
+        </div>
+
+        <div class="grid">
+
+          <!-- Leaderboard 728x90 -->
+          <article class="card card--lead">
+            <div class="card__head">
+              <div>
+                <h3>TaskFlow AI &mdash; SaaS</h3>
+                <p class="card__meta"><span class="tag">728 &times; 90</span>Leaderboard</p>
+              </div>
+              <button class="replay" type="button" data-target="frame-tech" aria-label="Replay TaskFlow AI banner">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>
+                Replay
+              </button>
+            </div>
+            <div class="stage">
+              <div class="fit" data-w="728" data-h="90">
+                <iframe id="frame-tech" src="banners/tech-728x90/index.html" width="728" height="90"
+                        scrolling="no" frameborder="0" title="TaskFlow AI 728x90 banner"
+                        sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
+              </div>
+            </div>
+            <ul class="chips">
+              <li>Gradient accents</li><li>3-frame story</li><li>~8 KB</li>
+            </ul>
+          </article>
+
+          <!-- Medium Rectangle 300x250 -->
+          <article class="card card--rect">
+            <div class="card__head">
+              <div>
+                <h3>Sneaker Flash Sale &mdash; E-commerce</h3>
+                <p class="card__meta"><span class="tag">300 &times; 250</span>Medium Rectangle</p>
+              </div>
+              <button class="replay" type="button" data-target="frame-ecom" aria-label="Replay Sneaker Flash Sale banner">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>
+                Replay
+              </button>
+            </div>
+            <div class="stage">
+              <div class="fit" data-w="300" data-h="250">
+                <iframe id="frame-ecom" src="banners/ecommerce-300x250/index.html" width="300" height="250"
+                        scrolling="no" frameborder="0" title="Sneaker Flash Sale 300x250 banner"
+                        sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
+              </div>
+            </div>
+            <ul class="chips">
+              <li>Animated badge</li><li>Pulsing CTA</li><li>~8 KB</li>
+            </ul>
+          </article>
+
+          <!-- Wide Skyscraper 160x600 -->
+          <article class="card card--sky">
+            <div class="card__head">
+              <div>
+                <h3>The Grand Residences</h3>
+                <p class="card__meta"><span class="tag">160 &times; 600</span>Wide Skyscraper</p>
+              </div>
+              <button class="replay" type="button" data-target="frame-estate" aria-label="Replay The Grand Residences banner">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>
+                Replay
+              </button>
+            </div>
+            <div class="stage">
+              <div class="fit" data-w="160" data-h="600">
+                <iframe id="frame-estate" src="banners/realestate-160x600/index.html" width="160" height="600"
+                        scrolling="no" frameborder="0" title="The Grand Residences 160x600 banner"
+                        sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
+              </div>
+            </div>
+            <ul class="chips">
+              <li>Charcoal &amp; gold</li><li>SVG skyline</li><li>~10 KB</li>
+            </ul>
+          </article>
+
+          <!-- Compliance checklist -->
+          <aside id="specs" class="card card--specs" aria-labelledby="specs-title">
+            <h3 id="specs-title">Built to GDN &amp; IAB spec</h3>
+            <p class="card__meta">Every banner in this set is a single, self-contained <code>index.html</code>.</p>
+            <ul class="checklist">
+              <li><b>ad.size meta tag</b><span>&lt;meta name="ad.size"&gt; declared per creative</span></li>
+              <li><b>Official clickTag</b><span>Clickable container calls <code>window.open(window.clickTag)</code></span></li>
+              <li><b>&lt;150KB total</b><span>No raster images; SVG &amp; CSS only</span></li>
+              <li><b>&le;30s animation</b><span>Two plays, then it stops on a static end frame</span></li>
+              <li><b>1px ad boundary</b><span>Solid border so the ad is clearly separated from page content</span></li>
+              <li><b>Graceful fallback</b><span>End frame is visible even if GSAP fails to load</span></li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer / CTA ========== -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="cta-panel">
+        <h2>Need banners that convert for your next campaign?</h2>
+        <p>Custom HTML5 ad sets in every IAB size, ready for Google Ads, DV360 &amp; programmatic, delivered with source files and fast revisions.</p>
+        <a href="#" class="btn btn--primary btn--lg">
+          Hire Me on Fiverr
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 AdStudioLab. All rights reserved.</span>
+        <span>Built with HTML5 &middot; CSS3 &middot; GSAP</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Replay: reload only the targeted iframe (cache-busting query forces a fresh run)
+      document.querySelectorAll(".replay").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var frame = document.getElementById(btn.dataset.target);
+          if (!frame) return;
+          if (!frame.dataset.src) frame.dataset.src = frame.getAttribute("src");
+          frame.src = frame.dataset.src + "?replay=" + Date.now();
+
+          btn.classList.remove("is-spinning");
+          void btn.offsetWidth; // restart the icon animation
+          btn.classList.add("is-spinning");
+        });
+      });
+
+      // Scale banners down on narrow screens while keeping their exact native dimensions
+      var boxes = document.querySelectorAll(".fit");
+      function fitBanners() {
+        boxes.forEach(function (box) {
+          var w = +box.dataset.w, h = +box.dataset.h;
+          var stage = box.parentElement;
+          var cs = getComputedStyle(stage);
+          var avail = stage.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+          var s = Math.min(1, avail / w);
+          box.style.width = w * s + "px";
+          box.style.height = h * s + "px";
+          box.firstElementChild.style.transform = s < 1 ? "scale(" + s + ")" : "";
+        });
+      }
+      fitBanners();
+      window.addEventListener("resize", fitBanners);
+    })();
+  </script>
+</body>
+</html>
